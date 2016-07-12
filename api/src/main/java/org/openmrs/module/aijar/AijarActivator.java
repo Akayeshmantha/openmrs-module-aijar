@@ -208,8 +208,8 @@ public class AijarActivator extends org.openmrs.module.BaseModuleActivator {
         // set the name of the application
         properties.add(new GlobalProperty("application.name", "UgandaEMR - Uganda eHealth Solution"));
 
-        // the regular expression for validating patient names to include periods
-        properties.add(new GlobalProperty("patient.nameValidationRegex", "^[a-zA-Z.\\-]+$"));
+        // the regular expression for validating patient names to include periods and blank spaces
+        properties.add(new GlobalProperty("patient.nameValidationRegex", "^[a-zA-Z. \\-]+$"));
 
         // the search mode for patients to enable searching any part of names rather than the beginning
         properties.add(new GlobalProperty("patientSearch.matchMode", "ANYWHERE"));
