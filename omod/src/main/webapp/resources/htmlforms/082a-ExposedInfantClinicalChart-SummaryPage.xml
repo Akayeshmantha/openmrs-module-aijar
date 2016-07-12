@@ -61,7 +61,7 @@
             width: 50%;
         }
 
-        ttable th, table td {
+        table th, table td {
             border: 1px solid #BDBDBD;
             text-align: left;
             vertical-align: top;
@@ -69,6 +69,7 @@
     </style>
 
     <script type="text/javascript">
+        var openmrsContextPath = OPENMRS_CONTEXT_PATH;
         function enable_disable_pcr_test_result(selected_option) {
 
             var class_name = jq(selected_option).attr("class");
@@ -297,8 +298,6 @@
 				jq.validator.addMethod("birthBeforeChartOpenedDate", function(value, element ) {
 		            var birthDate = new Date(jq('#birthDate').text());
 					var dateOpened = new Date(getValue('encounterDate.value'));
-					alert("The encounter date is " + dateOpened);
-					alert("The birth date is " + birthDate);
 					return dateOpened >= birthDate;
 
 				}, "The date file opened has to be after the date of birth of the exposed infant");
@@ -451,26 +450,9 @@
 
                 <table class="table table-bordered custom-table">
                     <tr>
-                        <td style="width:15%;">Mother's Name</td>
-                        <td style="width: 15%;"><obs conceptId="99776"/></td>
-                        <td style="width:15%;">Common Name</td>
-                        <td  colspan="3"><obs conceptId="99775"/></td>
-                    </tr>
-                    <tr>
-                        <td >Telephone No</td>
-                        <td><obs conceptId="162889" id="162889"/></td>
-                        <td >District</td>
-                        <td ><obs conceptId="162884"/></td>
-                        <td >County</td>
-                        <td ><obs conceptId="162885"/></td>
-                    </tr>
-                    <tr>
-                        <td >Sub county</td>
-                        <td ><obs conceptId="162886"/></td>
-                        <td >Village</td>
-                        <td ><obs conceptId="162887"/></td>
-                        <td >Parish</td>
-                        <td ><obs conceptId="162888"/></td>
+                        <td>Mother</td>
+                        <td colspan="5"><relationship type="8d91a210-c2cc-11de-8d13-0010c6dffd0f" whoAmI="B"
+                                                      changeExistingRelationship="true" required="true"/></td>
                     </tr>
                     <tr>
                         <td >LC1 Zone</td>
