@@ -65,6 +65,8 @@
 		<atlasVersion>2.2</atlasVersion>
 		<calculationVersion>1.2</calculationVersion>
 		<chartsearchVersion>2.1.0</chartsearchVersion>
+		<cohortVersion>2.0.1-SNAPSHOT</cohortVersion>
+		<coreappsVersion>1.18.0</coreappsVersion>
 		<coreappsVersion>1.18.0</coreappsVersion>
 		<databaseBackupVersion>1.3.0</databaseBackupVersion>
 		<dataEntryStatisticsVersion>1.6.0</dataEntryStatisticsVersion>
@@ -210,6 +212,13 @@
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>calculation-api</artifactId>
 				<version>${calculationVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>cohort-omod</artifactId>
+				<version>${cohortVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
@@ -405,12 +414,24 @@
 				<scope>test</scope>
 			</dependency>
 
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>webservices.rest-omod</artifactId>
+                <version>${webservices.restModuleVersion}</version>
+                <scope>test</scope>
+            </dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>webservices.rest-omod-common</artifactId>
 				<version>${webservices.restModuleVersion}</version>
 				<scope>test</scope>
 			</dependency>
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>webservices.rest-omod-2.1</artifactId>
+                <version>${webservices.restModuleVersion}</version>
+                <scope>test</scope>
+            </dependency>
 		</dependencies>
 	</dependencyManagement>
 
