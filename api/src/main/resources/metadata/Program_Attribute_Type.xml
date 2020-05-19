@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+<program_attribute_type  program_attribute_type_id="1"  name="PrisonerNo"  description="Prisoner Number"   min_occurs="0"    creator="1"  date_created="2020-01-23 09:29:51"     uuid="7f3a1383-6974-43d3-b612-b358194e42c0"/>
+<program_attribute_type  program_attribute_type_id="2"  name="LoggingNo"  description="Logging Number"   min_occurs="0"    creator="1"  date_created="2020-01-23 09:30:34"     uuid="cb46c0e9-0b99-4462-a47f-87a875ce2e1d"/>
+</dataset>
