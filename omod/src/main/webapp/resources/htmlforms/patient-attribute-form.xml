@@ -7,7 +7,7 @@
           formUILocation="patientDashboard.visitActions"
           formOrder="11"
           formIcon="icon-user"
-          formShowIf="(visit.active || !visit.active) &amp;&amp; patient.person.dead==false &amp;&amp; sessionLocation.uuid=='11d5d2b8-0fdd-42e0-9f53-257c760bb9a3'"
+          formShowIf="(visit.active || !visit.active) &amp;&amp; patient.person.dead==false"
           formDisplayStyle="Standard"
           formLabel="patient Attribute test form">
     Program Attribute: <programAttribute programId="1" programAttributeTypeId="2" />
